@@ -29,6 +29,10 @@ MAN_BINS = $(filter-out ./tw-extras.md, $(MANS))
 # Admin \
 ADMIN::  ## ##################################################################
 
+.PHONY: create-sha
+create-sha:  ## create-sha
+	curl -L https://github.com/sysid/bkmr/archive/refs/tags/v4.17.1.tar.gz | shasum -a 256
+
 .PHONY: init
 init:  ## init
 	brew untap sysid/bkmr
