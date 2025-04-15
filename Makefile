@@ -31,7 +31,7 @@ ADMIN::  ## ##################################################################
 
 .PHONY: create-sha
 create-sha:  ## create-sha
-	curl -L https://github.com/sysid/bkmr/archive/refs/tags/v4.18.0.tar.gz | shasum -a 256
+	curl -L https://github.com/sysid/bkmr/archive/refs/tags/v4.19.0.tar.gz | shasum -a 256
 
 .PHONY: init
 init:  ## init

@@ -1,8 +1,8 @@
 class Bkmr < Formula
   desc "Bookmark manager for the terminal"
   homepage "https://github.com/sysid/bkmr"
-  url "https://github.com/sysid/bkmr/archive/refs/tags/v4.18.0.tar.gz"
-  sha256 "3d1d7e398a2d4f63b5df00667fe0f7b3689bd90f6a5f7283bf9bc28b700ae2d8"
+  url "https://github.com/sysid/bkmr/archive/refs/tags/v4.19.0.tar.gz"
+  sha256 "4712e1bf4f673bdcbbc4938c3a4a4a62a82730c15eca3db4ce9cf38170274691"
   license "BSD-3-Clause license" # Replace with your actual license
   depends_on "rust" => :build
 
