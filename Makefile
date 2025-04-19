@@ -33,12 +33,17 @@ ADMIN::  ## ##################################################################
 create-sha:  ## create-sha
 	curl -L https://github.com/sysid/bkmr/archive/refs/tags/v4.19.4.tar.gz | shasum -a 256
 
-.PHONY: init
-init:  ## init
+.PHONY: init-local
+init-local:  ## init-local
+	brew untap homebrew/core
 	brew untap sysid/bkmr
 	brew tap sysid/bkmr
 	brew info bkmr
 
+.PHONY: init-core
+init-core:  ## init-core
+	brew untap sysid/bkmr
+	brew tap --force homebrew/core
 
 ################################################################################
 # Building, Deploying \
